@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Desafio das Profissões</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topo">
+        <div class="logo">🎮 MEMORY GAME</div>
+        <span class="subtitulo">DESAFIO DAS PROFISSÕES</span>
+    </header>
+
+    <main class="container">
+
+        <section class="introducao">
+            <h1>Teste sua <span>memória!</span></h1>
+            <p>
+                Encontre os pares de profissões e descubra
+                quem será o grande campeão!
+            </p>
+        </section>
+
+        <!-- PLACAR DOS JOGADORES -->
+
+        <section class="placar">
+
+            <div class="jogador selecionado" id="jogador1">
+                <div class="avatar">👩🏻‍💻</div>
+                <h3>Jogador 1</h3>
+                <p>Pontos da partida</p>
+                <strong id="pontos1">0</strong>
+                <small>Campeonato: <b id="total1">0</b></small>
+            </div>
+
+            <div class="centro-placar">
+                <span>PARTIDA</span>
+                <strong id="rodada">01/05</strong>
+                <span>VS</span>
+            </div>
+
+            <div class="jogador" id="jogador2">
+                <div class="avatar">👨🏻‍🚀</div>
+                <h3>Jogador 2</h3>
+                <p>Pontos da partida</p>
+                <strong id="pontos2">0</strong>
+                <small>Campeonato: <b id="total2">0</b></small>
+            </div>
+
+        </section>
+
+        <!-- INFORMAÇÕES DA PARTIDA -->
+
+        <section class="informacoes">
+
+            <div>
+                <span>VEZ DE</span>
+                <h2 id="vez">Jogador 1</h2>
+            </div>
+
+            <div class="estatistica">
+                <span>PARES</span>
+                <strong id="pares">0/10</strong>
+            </div>
+
+            <div class="estatistica">
+                <span>TENTATIVAS</span>
+                <strong id="tentativas">0</strong>
+            </div>
+
+        </section>
+
+        <!-- TABULEIRO -->
+
+        <section id="tabuleiro" class="tabuleiro"></section>
+
+        <!-- MENSAGEM -->
+
+        <section class="mensagem" id="mensagem">
+            ✨ Escolha duas cartas para começar!
+        </section>
+
+        <!-- BOTÃO REINICIAR -->
+
+        <button id="reiniciar" class="botao">
+            ↻ REINICIAR CAMPEONATO
+        </button>
+
+        <!-- RESULTADO -->
+
+        <section id="resultado" class="resultado escondido">
+
+            <div class="trofeu" id="iconeResultado">🏆</div>
+
+            <h2 id="tituloResultado">Fim de jogo!</h2>
+
+            <p id="textoResultado"></p>
+
+            <button id="proximaRodada" class="botao">
+                PRÓXIMA PARTIDA →
+            </button>
+
+            <button id="jogarNovamente" class="botao">
+                NOVO CAMPEONATO
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        DESAFIO DAS PROFISSÕES © 2026
+        <p>Desenvolvido com criatividade e diversão 💜</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
